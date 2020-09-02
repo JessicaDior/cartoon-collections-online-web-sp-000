@@ -19,8 +19,12 @@ end
 
 def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
-    if snacks.include?(cheese_types)
-      return snacks.match(cheese_types)
+    if snacks.include?(cheese_types[0])
+      return "cheddar"
+    elsif snacks.include?(cheese_types[1])
+      return "gouda"
+    elsif snacks.include?(cheese_types[2])
+      return "camembert"
     else return nil
     end
 end
