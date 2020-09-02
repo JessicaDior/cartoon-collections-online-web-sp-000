@@ -12,7 +12,8 @@ end
 
 def long_planeteer_calls(calls_array)
   if calls_array.length > 4
-  else false
+    return true
+  else return false
   end
 end
 
